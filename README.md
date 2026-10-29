@@ -110,11 +110,6 @@ The saved file is named `classification_model.pkl` and can be loaded later to ma
 
 5. Open `Diabetes_Prediction.ipynb` and run the cells in order.
 
-## Important Note
-
-This project is for educational purposes and demonstrates a machine learning workflow. Its predictions are not a medical diagnosis.
-
-**Preprocessing improvement:** In the current notebook, outlier filtering and standardization happen before the train-test split. For a more reliable evaluation, these steps should be fitted using training data only and then applied to the test data. Also, the notebook creates a misspelled `Pregnacies` column instead of updating `Pregnancies`, so this should be corrected.
 
 ## Author
 

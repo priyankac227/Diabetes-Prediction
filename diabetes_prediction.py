@@ -12,8 +12,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 ###importing the data set
-dataframe= pd.read_csv("/content/diabetes.csv")
-print(f'\n\n**dataframehead**\n\n:{dataframe.head()}')
+dataframe = pd.read_csv("diabetes.csv")
+print(dataframe.head())
 ##checking the colums name
 print(f'\n\n**colums**\n\n:{dataframe.columns}')
 ##checking number of null values
@@ -145,7 +145,7 @@ from sklearn.linear_model import LogisticRegression
 classification = LogisticRegression()
 # Fit the model to the training data
 classification.fit(X_train_resampled, y_train_resampled)
-edictions = classification.predict(X_test)
+y_predictions  = classification.predict(X_test)
 print(y_predictions)
 from sklearn.metrics import accuracy_score
 accuracy_score(y_test, y_predictions)
